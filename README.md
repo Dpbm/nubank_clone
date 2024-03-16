@@ -1,16 +1,10 @@
-# nubank_clone
+# Nubank UI clone in Flutter
 
-A new Flutter project.
+![screenshot](./assets/readme/screenshot.png)
 
-## Getting Started
+This project, is an actvity for my Mobile Systems class. 
+The main idea here is to understand, a little bit, how a flutter project works by practicing.
 
-This project is a starting point for a Flutter application.
+All the code was created using with this tutorial:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[![Artificial Intelligence in Google's Dinosaur (English Sub)](https://img.youtube.com/vi/NRNxan1HY0k/0.jpg)](https://youtu.be/NRNxan1HY0k)
