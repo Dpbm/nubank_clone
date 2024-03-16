@@ -13,8 +13,6 @@ class NubankClone extends StatelessWidget {
     return (MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch()
-            .copyWith(secondary: const Color(0xFF280AD1)),
         splashColor: const Color(0xFF280AD1),
         highlightColor: const Color(0xFF280AD1),
         primaryColor: const Color(0xFF280AD1),

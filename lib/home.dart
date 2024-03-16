@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 
 class HomeScreenWrapper extends StatelessWidget {
   const HomeScreenWrapper({super.key});
@@ -19,9 +18,9 @@ class HomeScreen extends StatelessWidget {
     final double heightMarginTop = MediaQuery.of(context).padding.top;
     final double height = MediaQuery.of(context).size.height - heightMarginTop;
     final double width = MediaQuery.of(context).size.width;
-    const String name = 'ROberto';
+    const String name = 'Alexandre';
 
-    Future SetBarsColor(Color navigationBarColor, Color statusBarColor) async {
+    Future setBarsColor(Color navigationBarColor, Color statusBarColor) async {
       await Future.delayed(const Duration(milliseconds: 1));
       SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
           statusBarIconBrightness: Brightness.light,
@@ -31,7 +30,7 @@ class HomeScreen extends StatelessWidget {
           systemNavigationBarIconBrightness: Brightness.light));
     }
 
-    SetBarsColor(Colors.black, const Color(0xFF820AD1));
+    setBarsColor(Colors.black, const Color(0xFF820AD1));
 
     const TextStyle textStyleTitles = TextStyle(
         color: Colors.black, fontSize: 18, fontWeight: FontWeight.w600);
@@ -122,6 +121,7 @@ class HomeScreen extends StatelessWidget {
     ];
 
     return (Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: PreferredSize(
           preferredSize: const Size.fromHeight(0),
           child: AppBar(
@@ -181,8 +181,8 @@ class HomeScreen extends StatelessWidget {
                       ],
                     )),
                 Container(
-                    padding: EdgeInsets.all(20),
-                    height: 100,
+                    padding: const EdgeInsets.all(20),
+                    height: 110,
                     child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -202,7 +202,7 @@ class HomeScreen extends StatelessWidget {
                           )
                         ])),
                 Container(
-                    height: 135,
+                    height: 140,
                     width: width,
                     padding: const EdgeInsets.only(top: 13),
                     child: SingleChildScrollView(
@@ -348,7 +348,9 @@ class HomeScreen extends StatelessWidget {
                             onPressed: () {},
                             child: const Text('Pagar fatura',
                                 style: TextStyle(
-                                    fontSize: 15, fontWeight: FontWeight.w600)),
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.white)),
                           ),
                           const SizedBox(
                             width: 8,
@@ -408,7 +410,7 @@ class HomeScreen extends StatelessWidget {
                   color: Color(0xFFEBEBEB),
                 ),
                 Container(
-                  height: 380,
+                  height: 385,
                   width: width,
                   padding: const EdgeInsets.fromLTRB(0, 10, 0, 15),
                   child: Column(
@@ -512,8 +514,9 @@ class HomeScreen extends StatelessWidget {
                                                         style: const TextStyle(
                                                             fontSize: 16,
                                                             fontWeight:
-                                                                FontWeight
-                                                                    .w600)),
+                                                                FontWeight.w600,
+                                                            color:
+                                                                Colors.white)),
                                                   ),
                                                 )
                                               ],
